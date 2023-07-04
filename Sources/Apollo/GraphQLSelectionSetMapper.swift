@@ -22,7 +22,7 @@ final class GraphQLSelectionSetMapper<T: SelectionSet>: GraphQLResultAccumulator
 
   init(
     stripNullValues: Bool = true,
-    handleMissingValues: HandleMissingValues = .disallow
+    handleMissingValues: HandleMissingValues = .allowForOptionalFields
   ) {
     self.stripNullValues = stripNullValues
     self.handleMissingValues = handleMissingValues
